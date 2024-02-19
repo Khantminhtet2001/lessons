@@ -1,0 +1,21 @@
+x=int(input('Enter the number for x : '))
+y=int(input('Enter the number for y : '))
+print(f' x + y  : {x+y}')
+print(f' x - y  : {x-y}')
+print(f' x * y  : {x*y}')
+print(f' x / y  : {x/y}')
+print(f' x % y  : {x%y}')
+print(f' x ** y : {x**y}')
+print(f' x // y : {x//y}\n')
+
+print(f' x == y : {x==y}')
+print(f' x != y : {x!=y}')
+print(f' x > y  : {x>y}')  
+print(f' x < y  : {x<y}')
+print(f' x >= y : {x>=y}')
+print(f' x <= y : {x<=y}\n')
+
+print(f' x > 5 and y < 10      : {x > 5 and y < 10}')
+print(f' x > 5 or y < 4        : {x < 5 or y < 4}')
+print(f' not(x > 5 and y < 10) : {not(x > 5 and y < 10)}\n')
+
