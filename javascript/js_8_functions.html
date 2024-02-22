@@ -11,23 +11,42 @@
     <script>
 
         //Functions
-    // function showName(name) {
-    //     alert(name);
+    // function showName(name,about) {
+    //     console.log(name,about);
     // }
-    // showName(name);
-    function helloWorld(){
-        console.log("HelloWorld");
+    // showName(name,about);
+    // function helloWorld(){
+    //     console.log("HelloWorld");
+    // }
+    // helloWorld();
+
+    // //function  expression
+    // var showMgMgAge=function(age){
+    //     // let age = 21;
+    //     console.log(" mg mg age is " + age);
+    // }
+    // // showMgMgAge(age);
+
+    // function sum(num1,num2){
+    //     return num1+num2;
+    // }
+    // //sum(23,12)
+    // let result = sum(23,12);
+    // console.log(result);
+
+    //es6 syntax 
+
+    
+
+    let helloWorld=()=>"HelloWorld";
+    let result=helloWorld();
+    console.log(result);
+
+    let showMgMgAge =()=>{
+        let age = 21;
+        console.log("mg mg age is " + age);
     }
-    helloWorld();
-
-    //function  expression
-    var showMgMgAge=function(age){
-        // let age = 21;
-        console.log(" mg mg age is " + age);
-    }
-    // showMgMgAge(age);
-
-
+    showMgMgAge();
 
     </script>
 

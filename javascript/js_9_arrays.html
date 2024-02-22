@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif">Arrays</h1>
+    <script>
+
+        // let fruits = ["orange","apple","banana","strawberry"]
+
+        // let myBio= ["Khant min htet",21,'programmer','live in yangon'];
+        
+        
+        
+        // console.log(fruits);
+        // console.log(myBio[0]);
+        // console.log(myBio[1]);
+        // console.log(myBio[2]);
+        // console.log(myBio[3]);
+        // console.log(fruits.length);
+        // console.log(typeof fruits);
+
+        // fruits[4] = 'watermelon';
+        // fruits[1] = 'pineapple';            //over write
+        // fruits.push('mango');
+        // console.log(fruits); 
+
+
+        let myBio = [];
+        let insertDataToMyBioArray=(name,age,job,liveIn)=>{
+            // myBio.push(name,age,job,liveIn);
+            myBio.unshift(name,age,job,liveIn);
+            // myBio.unshift(name);
+            // myBio.unshift(age);
+            // myBio.unshift(job);
+            // myBio.unshift(liveIn);
+            console.log(myBio);
+            console.log(myBio.length);
+        }
+        insertDataToMyBioArray("Khant min htet",21,'programmer','live in yangon');
+
+
+
+    </script>
+</body>
+</html>
