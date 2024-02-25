@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>date</h1>
+    <script>
+
+        let now = new Date();
+        document.write(now.getFullYear());
+        
+        // // shows current date/time
+
+        // // 0 means 01.01.1970 UTC+0
+        // let Jan01_1970 = new Date(0);
+        // document.write(Jan01_1970);
+
+        // // now add 24 hours, get 02.01.1970 UTC+0
+        // let Jan02_1970 = new Date(24 * 3600 * 1000);
+        // document.write( Jan02_1970 );
+        
+
+        //constructor(obj t ku souk py tk function)
+
+        // let aungaungInfo = new function() {
+        //     this.name = "aung aung";
+        //     this.age = 19;
+        //     this.job = "programmer";
+        //     this.getName = function(name){
+        //         console.log('i am'+ name)
+        //     }
+        // }
+        // document.write(aungaungInfo)
+
+        function personBio(name,age){
+            this.name = name;
+            this.age = age;
+            
+        }
+        
+        
+        let aungaungBio = new personBio("aung aung",19);
+        console.log(aungaungBio);
+
+        let zawzawBio = new personBio("zaw zaw",20);
+        console.log(zawzawBio);
+
+        let myamyaBio = new personBio("mya mya",21);
+        console.log(myamyaBio);
+
+        let kyawkyawBio = new personBio("kyaw kyaaw",22);
+        console.log(kyawkyawBio);
+
+
+        function carConstructor(name,year,color) {
+            this.name = name;
+            this.year = year;
+            this.color = color;
+        }
+
+        let bmw = new carConstructor("bmw",2001,"red");
+        let marcedes = new carConstructor("marcedes",1998,"blue");
+        console.log(bmw);
+        console.log(marcedes);
+
+    </script>
+</body>
+</html>
