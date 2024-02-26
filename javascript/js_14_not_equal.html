@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Not equal and switch</h1>
+
+    <script>
+
+
+        // let age= 19;
+        // let result = age!=19;
+        // console.log(result);
+
+
+        // if(age!=25){
+        //     console.log("your are not 25 years old");
+        // }else{
+        //     console.log("your are 25 years old");
+        // }
+
+        // let grade = "A";
+        // switch(grade){
+        //     case "A":
+        //         console.log("your grade is A");
+        //         break;
+        //     case "B":
+        //         console.log("your grade is B");
+        //         break;
+        //     case "C":
+        //         console.log("your grade is C");
+        //         break;
+        //     case "D":
+        //         console.log("your grade is D");
+        //         break;
+        //     case "F":
+        //         console.log("your grade is F");
+        //         break;
+        //     default:
+        //             console.log("your grade is not valid");
+        //             break;
+        // }
+
+        //block variable
+        //global variable တွေကို ကြိုက်တဲ့နေရာ က ခေါ်ရ
+
+        let age = 19;                   //global variable
+        if(true) {
+            console.log(age);
+
+            let bornYear = 2005;        //local variable
+            console.log(bornYear); 
+            
+            if(age==19){
+                console.log("your age is now " + age);
+                console.log("your born year is now " + bornYear);
+            }else if(age<19){
+                console.log("your age is younger");
+            }else{
+                console.log("your age is older");
+            }
+        }
+
+        console.log(age);
+        // console.log(bornYear);   //local moh khw loh ma ya pr
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+
+        // let test="my name is khant min htet";
+        // console.log(test.length);
+        // console.log(typeof test);
+        // console.log(test.indexOf("a"));
+        // console.log(test.lastIndexOf("t"));
+
+        let persons = [
+            {
+                name: "Khant Min Htet",
+                age: 22,
+                nrc: "8/yasaka(N)111111"
+            },
+            {
+                name: "kyaw kyaw",
+                age: 22,
+                nrc: "8/yasaka(N)222222"
+            },
+            {
+                name: "zaw zaw",
+                age: 22,
+                nrc: "8/yasaka(N)333333"
+            }
+        ];
+
+        // console.log(persons);
+        // console.log(persons.length);
+        // console.log(persons[0].name);
+        // console.log(persons[0].age);
+        // console.log(typeof persons);
+        
+
+        // for (let i=0;i<persons.length; i++){
+        //     console.log(persons[i].name);
+        //     console.log(persons[i].age);
+        //     console.log(persons[i].nrc);
+        // }
+        //forEach
+        persons.forEach((person)=>{
+            console.log(person.name);
+            console.log(person.age);
+            console.log(person.nrc);
+        })
+    </script>
+</body>
+</html>
