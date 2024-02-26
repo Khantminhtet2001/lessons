@@ -25,8 +25,47 @@
         //     confirm("no");
         // };
 
-        let name = prompt("your name");
-        console.log(name);
+        // let name = prompt("your name");
+        // document.write(name);
+
+        //class es6
+
+        // function person(name,age) {
+        //     this.name = name;
+        //     this.age = age;
+        // }
+        // let person1 = new person("aung aung",19);
+        // console.log(person1);
+
+        // let person2 = new person("zaw zaw",20);
+        // let person3 = new person("mya mya",21); 
+        // let person4 = new person("kyaw kyaw",22);
+
+        class Person{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+            static getAge(){
+                console.log("age is 21")
+            }   //static pr yim class name khw ma ya tal
+        }
+
+        let person1 = new Person("aung aung",19);
+        let person2 = new Person("zaw zaw",20);
+        let person3 = new Person("mya mya",21);
+        let person4 = new Person("kyaw kyaw",22);
+
+
+        console.log(person1);
+        console.log(person1.name);
+        console.log(person1.age);
+
+        console.log(Person.getAge());
+
+
+
+
 
 
 
