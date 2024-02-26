@@ -8,11 +8,54 @@
 <body>
     <h1>Interval function</h1>
     <script>
-        let i = 0;
-        setInterval(() => {
-            i++;
-            document.write(i+"<br>");
-        }, 3000);                       //3000 is milliseconds time duration
+        // let i = 0;
+        // setInterval(() => {
+        //     i++;
+        //     document.write(i+"<br>");
+        // }, 3000);                       //3000 is milliseconds time duration
+
+        
+
+        setTimeout(()=>{
+
+            let serverDatas = [
+                {
+                    name: "kyaw kyaw",
+                    age: 30,
+                    job: "programmer"
+                },
+                {
+                    name: "mya mya",
+                    age: 25,
+                    job: "programmer"
+                },
+                {
+                    name: "aung aung",
+                    age: 20,
+                    job: "developer"
+                },
+                {
+                    name: "u mya",
+                    age: 15,
+                    job: "business manager"
+                }
+            ];
+
+            // console.log(serverDatas);
+
+            serverDatas.forEach((serverData)=>{
+                document.write(serverData.name+'<br>');
+                document.write(serverData.age+'<br>');
+                document.write(serverData.job+'<br>');
+            })
+
+           
+        },2000);                        //2000 milliseconds no looping
+
+        // serverDatas.forEach((serverData)=>{
+        //     console.log(serverData.name);
+        // })
+
     </script>
 </body>
 </html>
