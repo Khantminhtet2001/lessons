@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array map</h1>  <!--  for array loop-->
+
+    <script>
+        
+        let persons = ["john","Bob","aung aung"];
+        let fruits = ["apple","banana","pineapple"];
+        // persons.map(function(person){
+        //     console.log(person);
+        // });
+
+        //es6
+        let newFruits= fruits.map((fruit)=>{
+            // console.log(fruit);
+            return fruit;
+        });
+
+        let newPersons=persons.forEach((person)=>{  //for each ka return value ma shi bu
+            // console.log(person);
+            return person;
+        });
+
+        let numbers = [1,2,3,4,5];
+
+        let newNumberArray = numbers.map((number) =>{
+            return number + 1;
+        });
+
+
+
+    </script>
+
+    </script>
+</body>
+</html>
