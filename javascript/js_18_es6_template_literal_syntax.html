@@ -41,28 +41,58 @@
         // let person3 = new person("mya mya",21); 
         // let person4 = new person("kyaw kyaw",22);
 
-        class Person{
-            constructor(name,age){
-                this.name = name;
-                this.age = age;
+        // class Person{
+        //     constructor(name,age){
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+        //     static getAge(){
+        //         console.log("age is 21")
+        //     }   //static pr yim class name khw ma ya tal
+        // }
+
+        // let person1 = new Person("aung aung",19);
+        // let person2 = new Person("zaw zaw",20);
+        // let person3 = new Person("mya mya",21);
+        // let person4 = new Person("kyaw kyaw",22);
+
+
+        // console.log(person1);
+        // console.log(person1.name);
+        // console.log(person1.age);
+
+        // console.log(Person.getAge());
+
+        class Parent{
+            constructor(father,mother){
+                this.father = father;
+                this.mother = mother;
             }
-            static getAge(){
-                console.log("age is 21")
-            }   //static pr yim class name khw ma ya tal
+            greeting(){
+                console.log("hello "+child1.childName);
+            }
+            sayHi(){
+                alert("hello "+child1.childName);
+            }
         }
 
-        let person1 = new Person("aung aung",19);
-        let person2 = new Person("zaw zaw",20);
-        let person3 = new Person("mya mya",21);
-        let person4 = new Person("kyaw kyaw",22);
+        let parent1 = new Parent("U kyaw","D mya");
+        let parent2 = new Parent("U Hla","D Ngyo");
 
+        console.log(parent1);
+        console.log(parent1.father);
 
-        console.log(person1);
-        console.log(person1.name);
-        console.log(person1.age);
+        class children extends Parent {
+            constructor(father,mother,childName){
+                super(father,mother);
+                this.childName = childName;
+            }
+        }
 
-        console.log(Person.getAge());
+        let child1 = new children("U kyaw","D mya","Kyaw Kyaw");
 
+        console.log(child1.greeting());
+        console.log(child1.sayHi());
 
 
 
