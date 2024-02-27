@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Document Object model</h1>
+
+    <input id="inputText" type="text">
+    <button onclick="changeHeader()">click me</button>
+
+    <ul>
+        <li class="class-item">apple</li>
+        <li class="class-item">orange</li>
+        <li class="class-item">banana</li>
+        <li class="class-item">Mango</li>
+    </ul>
+
+
+
+    <script>    
+
+        let x =  document.getElementById("header");             //select element
+        //    console.log(x.innerHTML);
+
+        //    x.innerHTML = "DOM is Document Object Model";
+       
+        // let inputText = prompt("Say something...");
+        // document.getElementById("header").innerHTML = inputText;
+
+        // input from window -> ouput from document
+        //1. input တောင်း
+        //2. စာရေးတယ် ok button cliclk
+        //3. h1 write ko htae py in UI
+
+
+        let i = document.getElementById("inputText");           //select element
+        
+
+        function changeHeader(){
+            x.innerText = i.value;                  //overwrite header text -> input text
+            console.log(i.value);
+        }
+
+        //li kaw ni
+
+        let gggg = document.getElementsByClassName("class-item");
+        
+        document.write(gggg[1].innerHTML);
+        console.log("ul".innerHTML);
+       
+        
+
+
+    
+        
+
+    </script>
+</body>
+</html>
