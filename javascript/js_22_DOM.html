@@ -11,6 +11,8 @@
     <input id="inputText" type="text">
     <button onclick="changeHeader()">click me</button>
 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nostrum, repellat a beatae iure rem iusto dolores minima non error.</p>
+
     <ul>
         <li class="class-item">apple</li>
         <li class="class-item">orange</li>
@@ -36,20 +38,26 @@
         //3. h1 write ko htae py in UI
 
 
-        let i = document.getElementById("inputText");           //select element
+        // let i = document.getElementById("inputText");           //select element
         
 
-        function changeHeader(){
-            x.innerText = i.value;                  //overwrite header text -> input text
-            console.log(i.value);
-        }
+        // function changeHeader(){
+        //     x.innerText = i.value;                  //overwrite header text -> input text
+        //     console.log(i.value);
+        // }
 
         //li kaw ni
 
-        let gggg = document.getElementsByClassName("class-item");
+        // let gggg = document.getElementsByClassName("class-item");
         
-        document.write(gggg[1].innerHTML);
-        console.log("ul".innerHTML);
+        // document.write(gggg[1].innerHTML);
+        // console.log("ul".innerHTML);
+
+        let tagName = document.getElementsByTagName("p");
+
+        for(let i = 0; i < tagName.length; i++){
+            console.log(tagName[i].innerHTML);
+        }
        
         
 
