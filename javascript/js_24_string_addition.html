@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="">
+        <label for="">first Number</label>
+        <br>
+        <input type="number" id="a">
+    </div>
+    <div class="">
+        <label for="">Second Number</label>
+        <br>
+        <input type="text" id="b">
+    </div>
+
+    ---------------------------------------------
+
+    <p>Answer: <span id="answer"></span></p>
+    <button onclick="calc()">Calculate</button>
+
+
+    <script>
+
+
+        let a = document.getElementById("a");
+        let b = document.getElementById("b");   
+        
+        
+        function calc() {
+            
+
+            // console.log(a.valueAsNumber);
+            // console.log(parseFloat(b.value));
+
+            document.getElementById("answer").innerText = a.valueAsNumber + Number(b.value);
+
+            a.value = b.value = "";
+        }
+    </script>
+
+
+
+</body>
+</html>
