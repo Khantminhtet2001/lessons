@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      img{
+          width: 100px;
+          height: 100px;
+      }
+    </style>
 </head>
 <body>
-     <h1>DOM</h1>
+     <h1 id="heading">DOM</h1>
      <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque nisi sit quasi expedita reiciendis ipsam placeat facilis explicabo modi?</p>
-     <a href="">Click Here</a>
+     <img src="./img/mrs.jpg" alt="image" srcset="">
+     <br><br>
+     <a href="www.google.com">Click Here</a>
      <hr>
      <ul>
         <li>apple</li>
@@ -24,7 +32,24 @@
         <li>Zaw Zaw</li>
      </ol>
 
+     <hr>
+     <span>Name</span>
+     <input type="text" id="value" name="name">
+     <br>   
+     <br>
+     <span>Weight</span>
+     <input type="number" class="num">
+     <br>
+     <br>
+     <input type="file" name="file" id="photo" multiple="">
+     <br>
+     <br> 
+
      <script>
+
+        //DOM Manipulation
+
+        //Select An Element
         console.log(document);
         console.log(document.getElementById("paragraph"));
         console.log(document.getElementsByTagName("p"));
@@ -45,6 +70,59 @@
 
         console.log(document.title);
         console.log(document.getElementsByTagName("h1")[0].innerHTML);
+
+        //Get Data
+
+        //Text
+        console.log(document.querySelector("h1").innerText);
+        console.log(document.querySelector("h1").textContent);
+        console.log(document.getElementsByTagName("h1")[0].innerHTML);
+
+        console.log(document.querySelector("ul").innerHTML);
+
+        document.querySelector("h1").style.color ="red";
+        document.querySelector("h1").style.backgroundColor ="yellow";
+
+        console.log(document.querySelector("[name='name']").value);         //console mr san
+
+        console.log(document.querySelector("[type='number']").valueAsNumber);
+
+        console.log(document.querySelector("a").href);
+        console.log(document.querySelector("a").getAttribute("href"));
+
+        //input file
+
+         console.log(document.querySelector("[name='file']"));
+         console.log(document.querySelector("[name='file']").files)
+
+         //overwrite values
+         let x = document.getElementById("heading").innerText;
+         x = "Testing";
+         document.getElementById("heading").innerText = x;
+         console.log(x);
+
+         document.querySelector("ul").innerHTML += '<li>Testing</li>';
+        
+         //overwrite color
+         document.querySelector("h1").style.color = "green";
+         document.querySelector("h1").style.fontSize = "90px";
+
+         document.querySelector("[name='name']").value = "Ko Ko Yay";
+         document.querySelector("[class='num']").value = "1234456"; 
+
+         console.log(document.links[0].href)
+         console.log(document.links[0].getAttribute("href"));
+         console.log(document.links[1].setAttribute("href","https://youtube.com"));
+
+         console.log(document.images[0].src);
+         console.log(document.images[0].getAttribute("src"));
+
+         document.images[0].setAttribute("src","./img/mr2.jpg");
+
+
+
+
+
         
      </script>
 
