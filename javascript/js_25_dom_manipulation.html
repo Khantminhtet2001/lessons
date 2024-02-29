@@ -6,6 +6,47 @@
     <title>Document</title>
 </head>
 <body>
-    
+     <h1>DOM</h1>
+     <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque nisi sit quasi expedita reiciendis ipsam placeat facilis explicabo modi?</p>
+     <a href="">Click Here</a>
+     <hr>
+     <ul>
+        <li>apple</li>
+        <li class="abc">orange</li>
+        <li>Mango</li>
+        <li data="ab">Banana</li>
+     </ul>
+     <hr>
+     <ol>
+        <li>Mg Mg</li>
+        <li data="cc">Kyaw Kyaw</li>
+        <li class="cc">Mya Mya</li>
+        <li>Zaw Zaw</li>
+     </ol>
+
+     <script>
+        console.log(document);
+        console.log(document.getElementById("paragraph"));
+        console.log(document.getElementsByTagName("p"));
+        console.log(document.getElementsByTagName("p")[0]);         //p htae ka index
+        let paragraph = document.getElementById("paragraph");
+        console.log(paragraph.innerHTML);
+        console.log(document.getElementsByClassName("abc")[0].innerHTML);
+        
+        
+        
+        console.log(document.querySelector("[data]"));
+        
+        console.log(document.querySelectorAll("ol li"));
+
+        console.log(document.querySelectorAll("ul li"));
+
+        console.log(document.querySelectorAll("[data]"));
+
+        console.log(document.title);
+        console.log(document.getElementsByTagName("h1")[0].innerHTML);
+        
+     </script>
+
 </body>
 </html>
