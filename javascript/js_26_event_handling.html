@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Handling</h1>
+
+    <!-- <button onclick="document.write('hello world')">Run</button> -->
+
+    <button  id="testBtn">Test</button>
+
+    <script>
+
+        function run(){
+            console.log("I am balar balar");
+        };
+
+        //basic events
+        //mouse
+
+
+        //onclick
+        // document.querySelector('#testBtn').onclick = function(){
+        //     run();
+        // };
+
+        //ondblclick
+        document.querySelector('#testBtn').ondblclick = function(){
+            run();
+        };
+
+        //mouseover
+        document.querySelector('#testBtn').onmouseover = function(){
+            run();
+        };
+
+        //mouseout
+        document.querySelector('#testBtn').onmouseout = function(){
+            run();
+        };
+
+    
+
+        //mouseout
+        document.querySelector('#testBtn').onmouseout = function(){
+            run();
+        };
+        
+        // //method
+        // document.querySelector('#testBtn').addEventListener("click",function(){
+        //     run();
+        // })
+
+        document.addEventListener("keyup",function(){
+            console.log("I am keyup");
+        });
+
+        document.addEventListener("keydown",function(){
+            console.log("I am keydown");
+        });
+
+        document.addEventListener("keypress",function(){
+            console.log("I am keypress");
+        });
+
+        
+
+    </script>
+
+
+</body>
+</html>
