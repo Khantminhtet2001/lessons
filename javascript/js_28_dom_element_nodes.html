@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <ul>
+        <li>apple</li>
+    </ul>
+    <script>
+
+        //html DOM elements(nodes)
+        let newP = document.createElement("p");
+        let newText = document.createTextNode("I am new");
+        newP.append(newText);
+        document.body.append(newP);
+
+        let p1 = document.createElement("p");
+        let text1 = document.createTextNode("I am p1");
+        p1.append(text1);
+        document.body.append(p1);
+
+        let h = document.createElement("h1");
+        let text2 = document.createTextNode("I am h1");
+        h.append(text2);
+        document.body.append(h);
+
+        // let img = document.createElement("img");
+        // let src = document.setAttribute("./img/mrs.jpg");
+        // body.append(img.src);
+
+        let li =document.createElement("li");
+        li.innerText = "orange";
+        document.querySelector("ul").append(li);
+
+
+        let li1 =document.createElement("li");
+        li1.innerText = "mango";
+        document.querySelector("ul").append(li1);
+
+        let li3 =document.createElement("li");
+        li3.innerText = "gggggg";
+        document.querySelector("ul").prepend(li3);
+
+        // document.querySelectorAll("li")[1].remove();
+
+        let laseLi = document.querySelectorAll("li")[2];
+        document.querySelector("ul").removeChild(laseLi);
+
+    </script>
+</body>
+</html>
