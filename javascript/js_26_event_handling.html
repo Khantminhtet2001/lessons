@@ -12,6 +12,78 @@
 
     <button  id="testBtn">Test</button>
 
+    <a href="www.google.com" id="testLink">Click Here</a>
+
+    <br>
+    <br>
+    <form action="" id="testForm">
+        <input type="text" id="name" autofocus>
+
+    <br>
+
+    <button type="submit" id="form">submit</button>
+    </form>
+
+
+    <!-- for scroll -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
     <script>
 
         function run(){
@@ -45,7 +117,8 @@
     
 
         //mouseout
-        document.querySelector('#testBtn').onmouseout = function(){
+        document.querySelector('#testBtn').onclick = function(){
+            console.log(this.innerText);
             run();
         };
         
@@ -54,17 +127,90 @@
         //     run();
         // })
 
-        document.addEventListener("keyup",function(){
-            console.log("I am keyup");
+        // document.addEventListener("keyup",function(e){
+        //     if(e.keyCode == 13){
+        //         run();
+        //     }
+        //     console.log("I am keyup");
+        // });
+
+        // document.addEventListener("keydown",function(){
+        //     console.log("I am keydown");
+        // });
+
+        // document.addEventListener("keypress",function(){
+        //     console.log("I am keypress");
+        // });
+
+
+        document.querySelector("h1").addEventListener("click",function(e){
+            console.log(e.target.innerText);
         });
 
-        document.addEventListener("keydown",function(){
-            console.log("I am keydown");
+
+        document.getElementById("testLink").addEventListener("click",function(e){
+            e.preventDefault();
+            console.log(this.getAttribute("href"));
+            console.log(this.innerText);
+            console.log(e);
+        });
+        
+        //input keyup
+        // document.getElementById("name").addEventListener("keyup",function(){
+        //     console.log(this.value.length);
+        //     console.log(this.value);
+        // });
+
+        //focus event
+        // document.getElementById("name").addEventListener("focus",function(){
+        //     console.log(this.value);
+        //     console.log("i am focus");
+        // });
+
+        // //blur event
+        // document.getElementById("name").addEventListener("blur",function(){
+        //     console.log(this.value);
+        //     console.log("i am blur");
+        // });
+
+        //change event
+        // document.getElementById("name").addEventListener("change",function(){
+        //     console.log("i am change");
+        //     console.log(this.value);
+        // });
+
+        //submit event
+        // document.getElementById("testForm").addEventListener("submit",function(){
+        //     console.log("i am submit");
+        //     console.log(this.value);
+        // });
+
+        // window.onload = function(){
+        //     console.log("i am onload");
+        // };
+
+        // console.log("hello world");
+
+        //mousemove event
+        document.addEventListener("mousemove",function(e){
+            console.log("i am mousemove");
+            console.log(e.clientX,e.clientY);
         });
 
-        document.addEventListener("keypress",function(){
-            console.log("I am keypress");
-        });
+        //scroll event
+        // window.addEventListener("scroll", function(){
+        //     console.log("i am scroll");
+        //     console.log(window.scrollY);
+
+        // });
+
+    </script>
+
+    </script>
+
+
+
+    </script>
 
         
 
