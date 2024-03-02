@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Useful Prototype Methods</h1>
+    <script>
+
+
+        //string method
+        let name = "     Khant Min Htet     ";
+        let text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates tenetur dignissimos, quasi quia deleniti maxime officia quaerat iusto ipsum."
+
+        //number method
+        let age = 23;
+        let myBit = 2.47295023;
+        let weight = "180.46lb";
+        let money = "181$";
+
+        //array method
+        const fruits = ["banana", "Orange","Apple","Mango"];
+
+        //object method
+        let me={
+            name : "Khant Min Htet",
+            age : 22,
+            job : "programmer",
+            skills : ["html", "css", "javascript"],
+            haveGirlFriend : false,
+        }
+
+        //String Method
+        document.write(name.length+"<br>");
+        document.write(text.length+"<br>");
+        document.write(name[4]+"<br>");
+        document.write(name.substr(0,5)+"<br>");
+        document.write(name.search("Khant")+"<br>");
+        document.write(name.replace("Khant","Min")+"<br>");
+        document.write(text.replace("dolor","kyats")+"<br>");
+        document.write(text.replace(/dolor/g, "Kyats")+"<br>");
+        document.write(name.toUpperCase()+"<br>");
+        document.write(name.toLowerCase()+"<br>");
+        document.write(name.trim()+"<br>");             //ma lo tae space twy delete
+
+        let a = "5";
+        
+        document.write(a.padStart(10,"0")+"<br>");
+        document.write(a.padEnd(10,"0")+"<br>");
+
+        let cleanName = name.trim();
+        let nameArr = cleanName.split(" ");
+        console.log(nameArr);
+        console.log(nameArr = cleanName.split("t"));
+        console.log(nameArr = cleanName.split(""));
+
+        let TextArr = text.split(" ");
+        console.log(TextArr);
+        console.log(TextArr.length);
+    </script>
+
+    </script>
+
+</body>
+</html>
