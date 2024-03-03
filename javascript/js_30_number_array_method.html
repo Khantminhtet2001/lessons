@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>number Method</h1>
+    <script>
+        //string method
+        let name = "     Khant Min Htet     ";
+        let text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates tenetur dignissimos, quasi quia deleniti maxime officia quaerat iusto ipsum."
+
+        //number method
+        let age = 23;
+        let myBtc = 2.47295023;
+        let weight = "180.46lb";
+        let money = "181$";
+
+        //array method
+        const fruits = ["banana", "Orange","Apple","Mango"];
+
+        //object method
+        let me={
+            name : "Khant Min Htet",
+            age : 22,
+            job : "programmer",
+            skills : ["html", "css", "javascript"],
+            haveGirlFriend : false,
+        }
+
+        //number method
+        console.log(age);
+        console.log(age.toString());
+        console.log(myBtc);
+        console.log(myBtc.toFixed(2));
+        console.log(myBtc.toPrecision(5));
+
+        console.log(weight);
+        console.log(money);
+        console.log(weight - 10);
+
+        console.log(parseFloat(weight)+ 10);
+        console.log(parseInt(money));
+        console.log(Math.floor(myBtc)); //  toe u
+        console.log(Math.ceil(myBtc));  // shoue u
+
+
+        //array method
+        console.log(fruits.length);
+        console.log(fruits.toString());
+        console.log(fruits.join("- , -"));
+        console.log(fruits.reverse());
+        console.log(fruits.sort());
+        console.log(fruits.slice(1,3));
+        console.log(fruits.slice(1));
+        console.log(fruits.push("pineapple"));
+        console.log(fruits.unshift("orange"));
+        console.log(fruits.pop());
+        console.log(fruits.shift());
+
+
+        //method of Object
+        console.log(me);
+        console.log(me.name);
+        console.log(Object.keys(me));
+        console.log(Object.values(me));
+
+
+
+    </script>
+</body>
+</html>
