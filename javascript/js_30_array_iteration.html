@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Iteration</h1>
+    <ul>
+
+    </ul>
+
+    <h1>mingalabar</h1>
+    <h1>khant min htet</h1>
+    <h1>san kyi tr pr</h1>
+    <h1>Hello World</h1>
+
+    <script>
+
+        //array iteration
+
+        let fruits = ["banana", "Orange","Apple","Mango"];
+
+        // for(let i=0;i<fruits.length;i++){
+        //     console.log(i,fruits[i]);   //index
+        // }
+
+        // for(fruit of fruits){
+        //     console.log(fruit);
+        // }
+
+        let ul = document.createElement("ul");
+        
+
+        fruits.forEach(function(i,index){
+            console.log(i);
+            let li = document.createElement("li");
+            let text = document.createTextNode(index+" "+i);
+            li.append(text);
+            ul.append(li);
+        });
+
+        document.body.prepend(ul);
+
+        let allH1 = document.querySelectorAll("h1");
+        console.log(allH1[0].innerHTML);
+
+        let h1Arr = [];
+
+        allH1.forEach(function(i,index){
+            console.log(i.innerText);
+            h1Arr.push(i.innerText)
+            console.log(h1Arr[index].length);
+        });
+    </script>
+
+
+</body>
+</html>
