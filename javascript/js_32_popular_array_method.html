@@ -13,25 +13,106 @@
         let fruits = ["banana", "Orange","Apple","Mango","Lemon"];
         let marks = [40,65,78,34,90,19];
 
-        //isArray()
-        console.log(Array.isArray(fruits));
-        console.log(Array.isArray(marks));
-        console.log(Array.isArray("me"));
+        // //isArray()
+        // console.log(Array.isArray(fruits));
+        // console.log(Array.isArray(marks));
+        // console.log(Array.isArray("me"));
 
-        //include()
-        console.log(fruits.includes("apple"));
-        console.log(fruits.includes("Apple"));
+        // //include()
+        // console.log(fruits.includes("apple"));
+        // console.log(fruits.includes("Apple"));
         
-        //indexOf()
-        console.log(fruits.indexOf("Apple"));
-        console.log(fruits.indexOf("Orange"));
+        // //indexOf()
+        // console.log(fruits.indexOf("Apple"));
+        // console.log(fruits.indexOf("Orange"));
 
         //splice()
         // console.log(fruits.splice(2,3));
         // console.log(fruits.splice(1,2));
 
         //concat()
-        console.log(fruits.concat(marks));
+        // console.log(fruits.concat(marks));
+
+        //map()
+        // let newArr = fruits.map(function(element,index){
+        //     console.log(index+1,element);
+        //     return element+ " - "+element.length;
+        // });
+
+        // let newArr = marks.map(function(el){
+        //     return el >= 49 ? "အောင်" : " ကျ ";
+        // });
+
+
+        // let newArr = marks.map(el=>{
+        //     console.log(el.title+ " - "+el.price);
+        // })
+        // console.log(newArr);
+
+        //filter()
+        // let newArr = fruits.filter(el=>{
+        //     console.log(el,el.length);
+        //     return el.length >= 5;
+        // })
+        
+
+        // let newArr = marks.filter(el=>{
+        //     // console.log(el+" is destination");
+        //     return el>=75;
+        // });
+
+        // console.log(newArr);
+
+        //find()
+        // let newArr = fruits.find(el=>{
+        //     console.log(el,el.length);
+        //     return el.length > 4;
+        // });
+
+        //reduce()
+
+        // let newArr = fruits.reduce((p,c) =>{
+        //     console.log(p+ " - "+c);
+        //     return p+c;
+        // },"0 ");
+
+        // let newArr = marks.reduce((p,c) =>{
+        //     console.log(p+ " - "+c);
+        //     return p+c;
+        // },0);
+
+        //some()
+        // let newArr = marks.some(el=>{
+        //     console.log(el);
+        //     return el>=40;
+        // });
+
+        //every()
+        // let newArr = marks.every(el=>{
+        //     console.log(el);
+        //     return el>=40;
+        // });
+
+        
+
+        //sort()
+        // let newArr = marks.sort((a,b)=>a-b);
+        // console.log(newArr);
+
+        //reverse()
+        // let newArr = marks.reverse();
+        // console.log(newArr);
+
+
+
+        let newArr = fruits.filter(el=>{
+            return el.length >4;
+        }).join(' - ');
+        console.log(newArr);
+        // document.write(newArr);
+        document.write('\n'+ newArr.toUpperCase());
+
+    </script>
 
         
 
