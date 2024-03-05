@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let one =()=>{
+            return "this is one";
+        }
+
+        let two =()=>{
+            let x = "this is two"
+            return x;
+        }
+
+        let three =x=>{
+            let y = "this is "+x;
+            return y;
+        };
+
+        let four =(x,y)=>{
+            let z= x+y;
+            return z;
+        };
+
+        (()=>{
+            console.log("this is five");
+            return "this is five";
+        })();
+
+        window.addEventListener("load",()=>console.log("this is six"));
+
+        let seven = {
+            name : "seven",
+            showName : function(){
+                console.og(this);
+            },
+
+            myName : ()=> `this is ${seven.name}`,
+        }
+
+        let fruits = ["Banana","Apple","Line","Mango","Orange","Lemon","Kiwi"]
+
+        let result = fruits.filter(el=>{
+            return el.length ==5
+        }).map(el=>{
+            return el.toUpperCase();
+        }).join("-").toLowerCase();
+
+        console.log(result);
+
+            
+    </script>
+</body>
+</html>
