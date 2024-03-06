@@ -16,6 +16,23 @@
 
     <input type="button" value="Forward" onclick="goForward()">
 
+    <button onclick="myFunction()">Try it</button>
+
+    <button onclick="alert('Hello\nHow are you?')">Try it</button>
+
+    <input type="button" value="My Timer" onclick="setInterval(myTimer,2000)">
+
+    <br>
+    <br>
+
+    <p>Click "Try it". Wait 3 seconds, and the page will alert "Hello".</p>
+
+    <button onclick="setTimeout(myFun, 3000);">Try it</button>
+
+    <button onclick="clearTimeout(myVar)">Stop it</button>
+
+    <button onclick="clearInterval(myTimer)">Stop time</button>
+
     <script>
         // let h1 = document.getElementById("demo");
         // h1.innerHTML = new Date();
@@ -136,7 +153,43 @@
 
        //confirm Box
 
-       
+    //    if (confirm("Press a button!")) {
+    //         txt = "You pressed OK!";
+    //         } else {
+    //         txt = "You pressed Cancel!";
+    //         }
+
+        myFunction=()=>{
+            let person = prompt("Please enter your name","Harry Potter");
+        let text;
+        if (person == null || person == "") {
+            text = "User cancelled the prompt.";
+        } else {
+            text = "Hello " + person + "! How are you today?";
+        }
+        document.getElementById("demo").innerHTML = text;
+        };
+
+
+        //line Breaks
+
+        //timing
+
+        myFun=()=>{
+            alert("Hello My Browser!");
+        };
+
+        
+        let myTimessss = setInterval(myTimer,1000);
+        myTimer=()=>{
+            let d = new Date();
+            document.getElementById("demo").innerHTML = d.toLocaleString();
+        };
+
+
+
+
+
 
 
 
