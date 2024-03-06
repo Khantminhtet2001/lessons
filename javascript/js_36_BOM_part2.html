@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="demo"></h1>
+
+
+    <input type="button" value="Load new document" onclick="newDoc()">
+
+    <input type="button" value="Back" onclick="goBack()">
+
+    <input type="button" value="Forward" onclick="goForward()">
+
+    <script>
+        // let h1 = document.getElementById("demo");
+        // h1.innerHTML = new Date();
+
+        //screen width
+
+        document.getElementById("demo").innerHTML = "screen width : " + window.screen.width;
+
+        //screen height
+
+        document.getElementById("demo").innerHTML = "screen height: "+ screen.height;
+
+        //available width
+
+        document.getElementById("demo").innerHTML =
+        "Available Screen Width: " + screen.availWidth;
+
+
+        //available height
+
+        document.getElementById("demo").innerHTML =
+        "Available Screen Height: " + screen.availHeight;
+
+        //screen color depth
+        document.getElementById("demo").innerHTML =
+        "Screen Color Depth: " + screen.colorDepth;
+
+        //screen pixel depth
+
+        document.getElementById("demo").innerHTML =
+        "Screen Pixel Depth: " + screen.pixelDepth;
+        
+
+        //location href
+
+        document.getElementById("demo").innerHTML ="Page location is " + window.location.href;
+
+        //location hostname
+
+        document.getElementById("demo").innerHTML =
+        "Page hostname is " + window.location.hostname;
+
+        //location pathname
+
+        document.getElementById("demo").innerHTML =
+        "Page path is " + window.location.pathname;
+
+        //location protocol
+
+        document.getElementById("demo").innerHTML =
+        "Page protocol is " + window.location.protocol;
+
+        //location port
+
+        document.getElementById("demo").innerHTML = " port number is "  + window.location.port;
+
+        //location assign
+
+        newDoc=()=>{
+            window.location.assign("https://www.google.com");
+        }
+
+        //history back
+
+        goBack=()=>{
+            window.history.back();
+        };
+
+        //history forward
+
+        goForward=()=>{
+            window.history.forward();
+        };
+
+        //cookies
+
+        document.getElementById("demo").innerHTML =
+        "cookiesEnabled is " + navigator.cookieEnabled;
+
+        //app name
+
+        document.getElementById("demo").innerHTML =
+        "navigator.appName is " + navigator.appName;
+
+        //code name
+
+        document.getElementById("demo").innerHTML =
+        "navigator.appCodeName is " + navigator.appCodeName;
+
+        //engine
+
+        document.getElementById("demo").innerHTML =
+        "navigator.product is " + navigator.product;
+
+       // Version
+       
+       document.getElementById("demo").innerHTML = navigator.appVersion;
+
+       // Agent
+
+       document.getElementById("demo").innerHTML = navigator.userAgent;
+
+       //platform
+
+       document.getElementById("demo").innerHTML = navigator.platform;
+
+       //language
+
+       document.getElementById("demo").innerHTML = navigator.language;
+
+       //Online?
+
+       document.getElementById("demo").innerHTML = navigator.onLine;
+
+       //Enabled?
+
+       document.getElementById("demo").innerHTML = navigator.javaEnabled();
+
+       //confirm Box
+
+       
+
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
