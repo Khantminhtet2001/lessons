@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Javascript OOP</h1>
+
+    <script>
+
+        //First class
+        class Animal{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+
+                //abstract methods
+                if(this.constructor == Animal){
+                    throw new Error("Can't create a instance of Abstract class");
+                }
+            }
+            getInfo(){
+                return `The name of the animal is ${this.name} and the age is ${this.age}`;
+            }
+            makeSound(){
+                throw new Error("abstract method does not have a implementation");
+            }
+        }
+
+        //First Instances
+
+        const firstAnimal = new Animal('Rex',2);
+        console.log(firstAnimal.getInfo());
+        console.log(firstAnimal);
+
+        const secondAnimal = new Animal( 'Barney', 5);
+        console.log(secondAnimal);
+        console.log(secondAnimal.getInfo ());
+
+        //Inheritance
+
+        class Dog extends Animal{
+            constructor(name,age,breed){
+                super(name,age);
+                this.breed = breed;
+            }
+            makeSound(){
+                return 'woof';
+            }
+        }
+
+        class Cat extends Animal{
+            //encapsulation
+            #weight;
+            constructor(name,age,weight){
+                super(name,age);
+                this.#weight= weight;
+            }
+            //polymorphism
+            // makeSound(){
+            //     return 'Meow';
+            // }
+            getWeight(){
+                return this.#weight;
+            }
+            setWeight(weight){
+                this.#weight = weight;
+            }
+        }
+
+        const myDog = new Dog('Rex' , 2 , 'German Shepard');
+        console.log(myDog);
+        console.log(myDog.breed);
+        console.log(myDog.makeSound());
+        console.log(myDog.getInfo());
+    
+
+        const myCat = new Cat('Barney', 5, '5kg');
+        console.log(myCat);
+        console.log(myCat.weight);
+        console.log(myCat.getInfo());
+        console.log(myCat.getWeight());
+        myCat.setWeight("10kg");
+        console.log(myCat.getWeight());
+        console.log(myCat.makeSound());
+
+
+    </script>
+</body>
+</html>
