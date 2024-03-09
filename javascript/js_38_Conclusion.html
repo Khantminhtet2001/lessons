@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        //syntax
+
+        let arr1 = [1, 2, 3, 4, 5];
+        let arr2 = ['a', 'b', 'c', 'd', 'e'];
+        let arr3 = arr1.concat(arr2);
+
+        run=(x,y,z,e,f) =>x+y+z+e+f;
+
+        console.log(run(...arr1));
+
+        test=(x,y)=>x+y;
+        console.log(test(10,5));
+        console.log(test(..."min ga lr par"));  //array 
+
+        let result = [...arr1,'abc',...arr2,...arr1,...arr2];
+        console.log(result);
+
+      //local storage
+      
+      localStorage.setItem("name","Khant Min Htet");
+      localStorage.setItem("age",27);
+
+      console.log(localStorage.getItem("name"));
+      console.log(localStorage.getItem("age"));
+
+      //geolocation
+
+    //   navigator.geolocation.getCurrentPosition(function(position){
+    //       console.log(position.coords.latitude);
+    //       console.log(position.coords.longitude);
+    //   });
+
+    //JSON
+
+    let myJson = '{"name":"Khant Min Htet","age":22,"skills":["html","javascript","css"]}';
+    console.log(JSON.parse(myJson));
+    
+    //object => JSON object
+    let json1 = JSON.stringify(arr1);
+
+    //fetch
+
+    // fetch('http://127.0.0.1:5500/javascript/mytest.json')
+    // .then(response => response.json())
+    // .then(data =>console.log(data));
+
+    fetch('https://fakestoreapi.com/products')
+    .then(response => response.json())
+    .then(data =>console.log(data));
+    </script>
+    
+</body>
+</html>
