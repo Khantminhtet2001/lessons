@@ -12,80 +12,82 @@
 <body>
     
     <div class="calc">
-        <h1 class="display">0</h1>
+        <h1 class="display"></h1>
         <div class="keypad">
 
             <table>
                 <tr>
                     <td>
-                        <div class="key">AC</div>
+                        <div class="key" onclick="clearAll()">AC</div>
                     </td>
                     <td>
-                        <div class="key">C</div>
+                        <div class="key" onclick="clearLast()">C</div>
                     </td>
                     <td>
-                        <div class="key">%</div>
+                        <div class="key" onclick="showDisplay('%')">%</div>
                     </td>
                     <td>
-                        <div class="key">&#xf7</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="key">7</div>
-                    </td>
-                    <td>
-                        <div class="key">8</div>
-                    </td>
-                    <td>
-                        <div class="key">9</div>
-                    </td>
-                    <td>
-                        <div class="key">&#xd7</div>
+                        <div class="key" onclick="showDisplay('/')">&#xf7</div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">4</div>
+                        <div class="key" onclick="showDisplay(7)">7</div>
                     </td>
                     <td>
-                        <div class="key">5</div>
+                        <div class="key" onclick="showDisplay(8)">8</div>
                     </td>
                     <td>
-                        <div class="key">6</div>
+                        <div class="key" onclick="showDisplay(9)">9</div>
                     </td>
                     <td>
-                        <div class="key">&#x2212</div>
+                        <div class="key" onclick="showDisplay('*')")">&#xd7</div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">1</div>
+                        <div class="key" onclick="showDisplay(4)">4</div>
                     </td>
                     <td>
-                        <div class="key">2</div>
+                        <div class="key" onclick="showDisplay(5)">5</div>
                     </td>
                     <td>
-                        <div class="key">3</div>
+                        <div class="key" onclick="showDisplay(6)">6</div>
                     </td>
                     <td>
-                        <div class="key">&#x2b</div>
+                        <div class="key" onclick="showDisplay('-')">&#x2212</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key" onclick="showDisplay(1)">1</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="showDisplay(2)">2</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="showDisplay(3)">3</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="showDisplay('+')">&#x2b</div>
                     </td>
                 </tr>
                 <tr>
                     
                     <td colspan="2">
-                        <div class="key zero">0</div>
+                        <div class="key zero" onclick="showDisplay(0)">0</div>
                     </td>
                     <td>
-                        <div class="key">.</div>
+                        <div class="key" onclick="showDisplay('.')">.</div>
                     </td>
                     <td>
-                        <div class="key">&#x3d</div>
+                        <div class="key" onclick="calc()">&#x3d</div>
                     </td>
                 </tr>
             </table>
         </div>
     </div>
+
+    <script src="js_40_calc_app.js"></script>
 </body>
 </html>
