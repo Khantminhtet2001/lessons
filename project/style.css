@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* --------header---------- */
+header{
+    width: 100%;
+    height: 75px;
+    border-bottom: 3px solid rgba(255,255,255,0.2);
+    background-color: #083358;
+}
+.logo h1 i{
+    color: #ffd717;
+}
+.logo h1{
+    color: white;
+}
+.nav{
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display:flex;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    }
+sup{
+    font-family: arial;
+    font-size: 15px;
+
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 30px 0 30px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: darkgray;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-link ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li a:hover::after{
+    width: 100%;
+}
+/* --------footer-------- */
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #083358;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family: "Poppins", sans-serif;
+}
+footer h1,p{
+    color: white;
+    text-align: center;
+}
+.foot-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+.sponsor-logo img{
+    width: 100px;
+    height: auto;
+}
+.sponsor-logo li{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding: 20px 30px;
+}
