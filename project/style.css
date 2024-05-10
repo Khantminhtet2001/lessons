@@ -7,16 +7,19 @@ header{
     width: 100%;
     height: 75px;
     border-bottom: 3px solid rgba(255,255,255,0.2);
-    background-color: #083358;
+    background-color: #0e153a;
+    top: 0;
+    position: fixed;
+    
 }
 .logo h1 i{
     color: #ffd717;
 }
 .logo h1{
-    color: white;
+    color:#e2f3f5;
 }
 .nav{
-    font-family: "Jersey 25", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     display:flex;
@@ -48,7 +51,7 @@ sup{
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #3d5af1;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -60,14 +63,14 @@ sup{
 footer{
     width: 100%;
     height: 300px;
-    background-color: #083358;
-    position: fixed;
+    background-color: #0e153a;
+    position: relative;
     bottom: 0;
     left: 0;
     font-family: "Poppins", sans-serif;
 }
 footer h1,p{
-    color: white;
+    color: #e2f3f5;
     text-align: center;
 }
 .foot-content{
@@ -85,5 +88,28 @@ footer h1,p{
     display: inline-block;
     position: relative;
     list-style: none;
-    padding: 20px 30px;
+    padding: 20px 30px 0px 30px;
+}
+footer p{
+    margin-bottom: 30px;
+}
+
+/* ---------body----------- */
+
+.ds-body{
+    width: 100%;
+    height: 100vh;
+    background-color: #e2f3f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.di body.main-banner{
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/intro-1536268468.jpg);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
 }
